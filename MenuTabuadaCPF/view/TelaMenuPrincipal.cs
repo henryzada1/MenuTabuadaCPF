@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MenuTabuadaCPF.view.CPF;
+using MenuTabuadaCPF.view.Tabuada;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,19 @@ namespace MenuTabuadaCPF.view
         public TelaMenuPrincipal()
         {
             InitializeComponent();
+        }
+
+        private void btnTabuada_Click(object sender, EventArgs e)
+        {
+            TelaTabuada telaTabuada = new TelaTabuada();
+            telaTabuada.ShowDialog();
+
+        }
+
+        private void btnCPF_Click(object sender, EventArgs e)
+        {
+            TelaCPF telaCPF = new TelaCPF();
+            telaCPF.ShowDialog();
         }
     }
 }
